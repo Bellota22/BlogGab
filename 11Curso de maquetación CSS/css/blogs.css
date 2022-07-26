@@ -1,0 +1,267 @@
+:root{
+    --verde:#41c7a4;
+    --fuente: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+        
+}
+.grid-container{
+    max-width: 1440px;
+    margin: auto;
+}
+.container1{
+    width: 100%;
+    height: 30px;
+    background-color: var(--verde);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+.container1 a{
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 60%;
+    margin: 0 6px;
+}
+.container1 a img:nth-child(1),
+.container1 a img:nth-child(2){
+    width: 10px;
+}
+
+.container1 a:nth-child(5)
+{
+    margin: 0 20px 0 6px;
+}
+.container2{
+    display: flex;
+    justify-content: space-between;
+}
+.container2 img{
+    width: 150px;
+    margin-left: 2px;
+}
+.container2 div{
+    align-self: center;
+    
+}
+.container2 .sobremi{
+    color: black;
+    font-weight: bold;
+    font-family: var(--fuente);
+    margin-right: 20px;
+}
+.noticias h1{
+    text-align: center;
+    margin:10px 0 10px 0;
+    font-size: 30px;
+    font-family:var(--fuente);
+    font-weight: none;
+}
+.noticias img{
+    width: 320px;
+   
+}
+
+.noticias div div{
+display: flex;
+flex-direction: column;
+}
+.noticias h2{
+    height: min-content;
+    padding-bottom: 5px;
+    text-align: center;
+    
+}
+.noticias p{
+    margin: 10px;
+}
+.noticias a {
+    width: 100px;
+    align-self: center;
+    text-align: center;
+    background-color: #e6e9ed;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border:1px solid black;
+
+}
+.noticias a{
+    text-decoration: none;
+    color: black;
+}
+.noticias div{
+    background-color: #e6e9ed;
+
+}
+
+
+.title{
+    display: none;
+}
+
+.blogs1 h1{
+    text-align: center;
+    margin:10px 0 10px 0;
+    font-size: 30px;
+    font-family:var(--fuente);
+    font-weight: none;
+}
+.blogs1 img,
+.blogs2 img,
+.blogs3 img,
+.blogs4 img,
+.blogs5 img,
+.blogs6 img{
+    width: 320px;
+   
+}
+.blogs1 div div,
+.blogs2 div div,
+.blogs3 div div,
+.blogs4 div div,
+.blogs5 div div,
+.blogs6 div div{
+display: flex;
+flex-direction: column;
+}
+.blogs1 h2,
+.blogs2 h2,
+.blogs3 h2,
+.blogs4 h2,
+.blogs5 h2,
+.blogs6 h2{
+    height: min-content;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.blogs1 p,
+.blogs2 p,
+.blogs3 p,
+.blogs4 p,
+.blogs5 p,
+.blogs6 p{
+    margin: 10px;
+}
+.blogs1  a,
+.blogs2  a ,
+.blogs3  a ,
+.blogs4  a ,
+.blogs5  a ,
+.blogs6  a {
+    width: 100px;
+    align-self: center;
+    text-align: center;
+    background-color: #e6e9ed;
+    margin-bottom: 10px;
+    border-radius: 3px;
+        border:1px solid black;
+
+}
+.blogs1 div,
+.blogs2 div,
+.blogs3 div,
+.blogs4 div,
+.blogs5 div,
+.blogs6 div{
+    background-color: #e6e9ed;
+}
+.blogs1  a,
+.blogs2  a,
+.blogs3  a,
+.blogs4  a,
+.blogs5  a,
+.blogs6  a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media(min-width:768px){
+
+
+
+
+
+
+
+  .noticias .main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .noticias img{
+    align-self: center ;
+  }
+  .noticias {
+    height: 260px;
+    background-color: #e6e9ed;
+    }
+    
+    .noticias a {
+        width: 100px;
+        align-self: flex-start;
+        text-align: center;
+        background-color: #e6e9ed;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        border:0.5px solid black;
+    
+    }
+
+    .grilla{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    .grilla h1{
+        display: none;
+    }
+
+
+    .blogs1 img,
+.blogs2 img,
+.blogs3 img,
+.blogs4 img,
+.blogs5 img,
+.blogs6 img{
+    width: 249px;
+   
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin:10px 0 10px 0;
+    font-size: 30px;
+    font-family:var(--fuente);
+    font-weight: none;
+}
+
+.blogs1  a,
+.blogs2  a ,
+.blogs3  a ,
+.blogs4  a ,
+.blogs5  a ,
+.blogs6  a {
+    width: 100px;
+    align-self: flex-start;
+    text-align: center;
+    background-color: #e6e9ed;
+    margin-bottom: 10px;
+    border-radius: 3px;
+        border:1px solid black;
+
+}
+
+
+}
